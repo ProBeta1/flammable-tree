@@ -1,26 +1,42 @@
-import React from 'react'
+import React , {useState} from 'react'
 // import Tree1 from './images/tree.png'
 import "./TellSecret1.css"
 
 export default function TellSecret1() {
 
-    // const [text, setText] = useState("");
+    const [text, setText] = useState("")
+
+
+    const handleClick = () => {
+        setText("Burnedddddd")
+    }
+
+    const handleChange = (e) => {
+        setText(e.target.value)
+    }
 
     return (
         <div className="wrapper">
             <div className="left">
+
+                
                 <div className="title">Got a secret and it is killing you?</div>
                 <div className="subt">You came to the right place</div>
                 <div className="nidarr" >Submit your secret to Flammable Tree</div>
 
                 <div className="boxT">
 
-                <input type="text" name="Type here"              placeholder="Type here" 
-                    />
+                <textarea placeholder="Type here ......" autoFocus={true} value={text} onChange={handleChange} className="txt"/>
+
 
                 </div>
+
+                <div className="btnBox">
+                    <button onClick={handleClick} className="btn">Submit</button>
+                </div>
+
                 
-                <p style={{ color: 'black' }}>No worries, nothing will be saved:) </p>
+                <div className="subt" >No worries, nothing will be saved:) </div>
             </div>
 
 
