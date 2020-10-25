@@ -1,13 +1,18 @@
 import React from 'react'
+import YouTube from 'react-youtube';
+import "./styles.css"
 
 export default function CalmDown() {
     return (
-        <div>
-            <h4>Can’t stop thinking? Something is driving you crazy?</h4>
-            <h5>You came to the right place </h5>
-            <h3>Watch a relaxing video on burning woods</h3>
+        <div className="ct">
+            <div className="quote">Can’t stop thinking? Something is driving you crazy?</div>
+            <div className="quote">You came to the right place </div>
+            <div className="quote" >Watch a relaxing video here</div>
 
-            <p>INSERT VIDEO HERE</p>
+            <div className="vid">
+                <YouTube videoId="5gBJrZmbGLo" />
+            </div>
+
         </div>
     )
 }

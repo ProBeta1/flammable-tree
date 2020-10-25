@@ -1,0 +1,10 @@
+.tx{
+  color:white;
+}
+
+.vid{
+  display: flex;
+  margin:30px;
+  justify-content: center;
+  align-items: center;
+}
