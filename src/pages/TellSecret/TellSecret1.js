@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 // import Tree1 from './images/tree.png'
 import "./TellSecret1.css"
+import ParticlesBg from 'particles-bg'
 
 export default function TellSecret1() {
 
@@ -8,7 +9,23 @@ export default function TellSecret1() {
 
 
     const handleClick = () => {
-        setText("Burnedddddd")
+        setText("Flammable tree has started to photosynthesize your secret .............")
+
+        setTimeout(() => {
+            setText("Burnedddddd")
+
+            setTimeout(() => {
+                setText("Done Dear Human . It was soooo tasty .. ooooo... ")
+
+                setTimeout(() => {
+                    setText("")
+                },3000)
+
+            },10000)
+
+        },5000)
+
+        
     }
 
     const handleChange = (e) => {
@@ -17,6 +34,10 @@ export default function TellSecret1() {
 
     return (
         <div className="wrapper">
+
+            {text==="Burnedddddd" ? 
+                <ParticlesBg type="thick"  />
+            :
             <div className="left">
 
                 
@@ -39,6 +60,10 @@ export default function TellSecret1() {
                 <div className="subt" >No worries, nothing will be saved:) </div>
             </div>
 
+            
+            }
+
+            
 
 
             {/* <div className="right" style={{
