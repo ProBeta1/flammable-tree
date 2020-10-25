@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Tree1 from './images/tree.png'
+// import Tree1 from './images/tree.png'
 import "./TellSecret1.css"
 
 export default function TellSecret1() {
 
-    const [text, setText] = useState("");
+    // const [text, setText] = useState("");
 
     return (
         <div className="wrapper">
