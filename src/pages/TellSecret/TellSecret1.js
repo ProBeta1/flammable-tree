@@ -1,21 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Tree1 from './images/tree.png'
 import "./TellSecret1.css"
 
 export default function TellSecret1() {
+
+    const [text, setText] = useState("");
+
     return (
-        <div>
+        <div className="wrapper">
             <div className="left">
-                <h4>Got a secret and it is killing you?</h4>
-                <h5>You came to the right place</h5>
-                <h3>Submit your secret to Flammable Tree</h3>
-                <input type="text" name="Type here" placeholder="Type here" />
+                <div className="title">Got a secret and it is killing you?</div>
+                <div className="subt">You came to the right place</div>
+                <div className="nidarr" >Submit your secret to Flammable Tree</div>
+
+                <div className="boxT">
+
+                <input type="text" name="Type here"              placeholder="Type here" 
+                    />
+
+                </div>
+                
                 <p style={{ color: 'black' }}>No worries, nothing will be saved:) </p>
             </div>
 
 
 
-            <div className="right" style={{
+            {/* <div className="right" style={{
                 height: '10px'
             }}>
                 <div className="imgbg" style={{
@@ -24,7 +34,7 @@ export default function TellSecret1() {
                     // backgroundSize: 'cover'
                     backgroundRepeat: 'no-repeat'
                 }}></div>
-            </div>
+            </div> */}
         </div>
     )
 }

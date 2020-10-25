@@ -1,5 +1,7 @@
-.root {
+.home2 {
   background-color: #686d75;
+  height:90vh;
+  justify-content: center;
 }
 
 .quote {
@@ -9,6 +11,5 @@
   font-size: 48px;
   line-height: 52px;
   text-align: center;
-
   color: #ffffff;
 }
