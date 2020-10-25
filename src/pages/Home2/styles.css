@@ -1,0 +1,14 @@
+.root {
+  background-color: #686d75;
+}
+
+.quote {
+  font-family: Mansalva;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #ffffff;
+}
