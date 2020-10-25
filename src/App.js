@@ -1,7 +1,7 @@
 import "materialize-css/dist/css/materialize.min.css";
 import React, { Fragment } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link, Route } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
+import { Route } from "react-router-dom";
 import "./App.css";
 import CalmDown from "./pages/CalmDown/CalmDown";
 import Home2 from "./pages/Home2/Home2";
