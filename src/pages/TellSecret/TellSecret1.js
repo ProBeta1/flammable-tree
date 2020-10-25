@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 // import Tree1 from './images/tree.png'
 import "./TellSecret1.css"
 

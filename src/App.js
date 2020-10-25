@@ -63,7 +63,7 @@ function App() {
 
         <Route exact path="/calmdown" component={CalmDown}/>
 
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" alt="logo" />
         <ParticlesBg type="lines" bg={true} />
 
 
